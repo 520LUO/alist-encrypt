@@ -29,7 +29,7 @@ const alistServerTemp = {
       enable: true, // enable encrypt
       encName: true, // encrypt file name
       encSuffix: '', //
-      encPath: ['/Aiyun/P/*','/123/G/加密/*','/CMCC/*'], // 路径支持正则表达式，常用的就是 尾巴带*，此目录的所文件都加密
+      encPath: ['/Aliyun/P/*','/123/G/加密/*','/CMCC/*'], // 路径支持正则表达式，常用的就是 尾巴带*，此目录的所文件都加密
     },
   ],
 }
@@ -126,7 +126,7 @@ export function initAlistConfig(alistServerConfig) {
 initAlistConfig(configData.alistServer)
 
 /** 代理服务的端口 */
-export const port = configData.port || 443
+export const port = 443
 
 export const version = '0.2.9'
 
