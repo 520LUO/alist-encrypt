@@ -18,18 +18,18 @@ const alistServerTemp = {
   name: 'alist',
   path: '/*', // 默认就是代理全部，保留字段
   describe: 'alist 配置',
-  serverHost: '192.168.1.100',
-  serverPort: 5244,
-  https: false,
+  serverHost: 'https://alist-aria2-ng06.onrender.com',
+  serverPort: 443,
+  https: true,
   passwdList: [
     {
-      password: '123456',
+      password: 'luoshaosong',
       describe: 'my video', // 加密内容描述
       encType: 'aesctr', // 算法类型，可选mix，rc4，默认aesctr
       enable: true, // enable encrypt
-      encName: false, // encrypt file name
+      encName: true, // encrypt file name
       encSuffix: '', //
-      encPath: ['encrypt_folder/*', '/189cloud/atest/*'], // 路径支持正则表达式，常用的就是 尾巴带*，此目录的所文件都加密
+      encPath: ['/Aiyun/P/*','/123/G/加密/*','/CMCC/*'], // 路径支持正则表达式，常用的就是 尾巴带*，此目录的所文件都加密
     },
   ],
 }
@@ -126,7 +126,7 @@ export function initAlistConfig(alistServerConfig) {
 initAlistConfig(configData.alistServer)
 
 /** 代理服务的端口 */
-export const port = configData.port || 5344
+export const port = configData.port || 443
 
 export const version = '0.2.9'
 
