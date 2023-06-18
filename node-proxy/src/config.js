@@ -126,7 +126,7 @@ export function initAlistConfig(alistServerConfig) {
 initAlistConfig(configData.alistServer)
 
 /** 代理服务的端口 */
-export const port = 443
+export const port = 5344
 
 export const version = '0.2.9'
 
