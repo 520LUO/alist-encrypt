@@ -18,7 +18,7 @@ const alistServerTemp = {
   name: 'alist',
   path: '/*', // 默认就是代理全部，保留字段
   describe: 'alist 配置',
-  serverHost: 'https://alist-aria2-ng06.onrender.com',
+  serverHost: 'alist-aria2-ng06.onrender.com',
   serverPort: 443,
   https: true,
   passwdList: [
