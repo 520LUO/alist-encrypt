@@ -18,12 +18,12 @@ const alistServerTemp = {
   name: 'alist',
   path: '/*', // 默认就是代理全部，保留字段
   describe: 'alist 配置',
-  serverHost: 'alist-aria2-ng06.onrender.com',
+  serverHost: '127.0.0.1',
   serverPort: 443,
   https: true,
   passwdList: [
     {
-      password: 'luoshaosong',
+      password: '123456',
       describe: 'my video', // 加密内容描述
       encType: 'aesctr', // 算法类型，可选mix，rc4，默认aesctr
       enable: true, // enable encrypt
