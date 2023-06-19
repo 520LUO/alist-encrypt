@@ -9,6 +9,10 @@ RUN ls -la
 
 RUN rm -rf /etc/localtime && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
+ENV PORT=5344
+
+ENV TZ=UTC
+
 EXPOSE 5344
  
 ENTRYPOINT ["node", "index.js"]
